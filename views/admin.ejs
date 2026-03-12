@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Siber Vatan | Admin</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body { background: #f0f2f5; font-family: 'Inter', sans-serif; }
+        .nav-logo { height: 35px; }
+        .card { border-radius: 12px; border: none; }
+        .table thead { background: #f8f9fa; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark mb-4 shadow">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="/logo.png" alt="Logo" class="nav-logo"> <span class="ms-2 small text-primary fw-bold">PANEL</span>
+            </a>
+            <div>
+                <a href="/" class="btn btn-outline-light btn-sm">Siteyi Gör</a>
+                <a href="/logout" class="btn btn-danger btn-sm ms-2">Güvenli Çıkış</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-sm p-4 mb-4">
+                    <h5 class="fw-bold mb-3">Yeni Yazı Ekle</h5>
+                    <form action="/admin/add" method="POST">
+                        <input type="text" name="title" class="form-control mb-2" placeholder="Başlık" required>
+                        <textarea name="content" class="form-control mb-2" rows="5" placeholder="İçerik..." required></textarea>
+                        <select name="status" class="form-select mb-3">
+                            <option value="public">Herkese Açık</option>
+                            <option value="private">Gizli</option>
+                        </select>
+                        <button class="btn btn-primary w-100 fw-bold shadow-sm">Yayınla</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card shadow-sm p-4">
+                    <h5 class="fw-bold mb-3 text-dark">İçerik Yönetimi</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead><tr><th>Başlık</th><th>Durum</th><th class="text-center">İşlem</th></tr></thead>
+                            <tbody>
+                                <% posts.forEach(post => { %>
+                                    <tr>
+                                        <td><strong><%= post.title %></strong></td>
+                                        <td><span class="badge <%= post.status === 'public' ? 'bg-success' : 'bg-secondary' %>"><%= post.status === 'public' ? 'Açık' : 'Gizli' %></span></td>
+                                        <td class="text-center">
+                                            <div class="btn-group shadow-sm">
+                                                <button class="btn btn-light btn-sm border" data-bs-toggle="modal" data-bs-target="#view<%= post.id %>"><i class="bi bi-eye text-primary"></i></button>
+                                                <button class="btn btn-light btn-sm border" data-bs-toggle="modal" data-bs-target="#edit<%= post.id %>"><i class="bi bi-pencil text-warning"></i></button>
+                                                <form action="/admin/delete/<%= post.id %>" method="POST" class="d-inline" onsubmit="return confirm('Silinsin mi?')"><button class="btn btn-light btn-sm border"><i class="bi bi-trash text-danger"></i></button></form>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <div class="modal fade" id="view<%= post.id %>" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content border-0 shadow"><div class="modal-header fw-bold"><%= post.title %><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body" style="white-space: pre-wrap;"><%= post.content %></div></div></div></div>
+                                    <div class="modal fade" id="edit<%= post.id %>" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content border-0 shadow"><div class="modal-header bg-warning fw-bold">Yazıyı Düzenle<button class="btn-close" data-bs-dismiss="modal"></button></div>
+                                    <form action="/admin/edit/<%= post.id %>" method="POST"><div class="modal-body">
+                                        <input type="text" name="title" class="form-control mb-3" value="<%= post.title %>" required>
+                                        <textarea name="content" class="form-control mb-3" rows="8" required><%= post.content %></textarea>
+                                        <select name="status" class="form-select mb-2"><option value="public" <%= post.status==='public'?'selected':'' %>>Herkese Açık</option><option value="private" <%= post.status==='private'?'selected':'' %>>Gizli</option></select>
+                                    </div><div class="modal-footer"><button type="submit" class="btn btn-success btn-sm px-4 fw-bold shadow-sm">Güncelle</button></div></form></div></div></div>
+                                <% }) %>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

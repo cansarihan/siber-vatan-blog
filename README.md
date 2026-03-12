@@ -25,6 +25,27 @@ URL: /login
 Kullanıcı Adı: admin
 Şifre: 1234
 
+## 📸 Proje Akışı ve Ekran Görüntüleri
+
+#### 1. Yönetici Giriş Ekranı
+Siber Vatan kurumsal renklerine uygun, güvenli giriş arayüzü.
+![Giriş Ekranı](./1.png)
+
+#### 2. Ana Sayfa (Yazısız)
+Projenin ilk açılış hali ve temiz arayüz tasarımı.
+![Boş Ana Sayfa](./2.png)
+
+#### 3. Ana Sayfa (İçerik Eklenmiş)
+Dinamik olarak eklenen yazıların kullanıcı tarafındaki görünümü.
+![İçerikli Ana Sayfa](./3.png)
+
+#### 4. Admin Yönetim Paneli
+Yazı ekleme, silme ve listeleme işlemlerinin yapıldığı kontrol merkezi.
+![Admin Panel](./4.png)
+
+#### 5. Düzenleme ve Önizleme (Inline Popup)
+Sayfa yenilemeden çalışan modern düzenleme (Modal) arayüzü.
+![Düzenleme Popup](./5.png)
 
 Geliştirici: Can Sarıhan
 

@@ -35,21 +35,24 @@ Kullanıcı Adı: admin
 </p>
 <p align="center">
 <img src="ekran_goruntuleri/2.png" width="800" alt="Ana Sayfa Boş">
-<i>Ana Sayfa (Yazısız): Projenin ilk açılış hali.</i>
 </p>
+<i>Ana Sayfa (Yazısız): Projenin ilk açılış hali.</i>
+
 <p align="center">
 <img src="ekran_goruntuleri/3.png" width="800" alt="Ana Sayfa Dolu">
-<i>Ana Sayfa (İçerik Eklenmiş): Dinamik içerik görünümü.</i>
 </p>
+<i>Ana Sayfa (İçerik Eklenmiş): Dinamik içerik görünümü.</i>
+
 <p align="center">
 <img src="ekran_goruntuleri/4.png" width="800" alt="Admin Paneli">
-<i>Admin Yönetim Paneli: Yazı ekleme, silme ve listeleme merkezi.</i>
 </p>
+<i>Admin Yönetim Paneli: Yazı ekleme, silme ve listeleme merkezi.</i>
+
 <p align="center">
 <img src="ekran_goruntuleri/5.png" width="800" alt="Düzenleme Ekranı">
-
-<i>Düzenleme ve Önizleme: Sayfa yenilemeden çalışan Modal arayüzü.</i>
 </p>
+<i>Düzenleme ve Önizleme: Sayfa yenilemeden çalışan Modal arayüzü.</i>
+
 
 Geliştirici: Can Sarıhan
 

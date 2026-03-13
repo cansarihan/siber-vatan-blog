@@ -11,19 +11,17 @@ Bu proje, **Siber Vatan Programı** ön eleme aşaması için geliştirilmiş, N
 
 ## 🚀 Kurulum ve Çalıştırma
 1. Bağımlılıkları yüklemek için:
-```bash
+
    npm install
 
 2. Uygulamayı başlatmak için::
-   ```bash
+   
    node server.js
 
 3. Tarayıcıdan erişmek için:
-    ```bash
 http://localhost:3000
 
 Admin Giriş Bilgileri:
-```bash
 URL: /login
 Kullanıcı Adı: admin
 Şifre: 1234
@@ -49,6 +47,7 @@ Kullanıcı Adı: admin
 </p>
 <p align="center">
 <img src="ekran_goruntuleri/5.png" width="800" alt="Düzenleme Ekranı">
+
 <i>5. Düzenleme ve Önizleme: Sayfa yenilemeden çalışan Modal arayüzü.</i>
 </p>
 

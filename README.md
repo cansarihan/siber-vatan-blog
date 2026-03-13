@@ -31,24 +31,24 @@ Kullanıcı Adı: admin
 <img src="ekran_goruntuleri/1.png" width="800" alt="Yönetici Giriş Ekranı">
 
 
-<i>1. Yönetici Giriş Ekranı: Siber Vatan kurumsal renklerine uygun arayüz.</i>
+<i>Yönetici Giriş Ekranı: Siber Vatan kurumsal renklerine uygun arayüz.</i>
 </p>
 <p align="center">
 <img src="ekran_goruntuleri/2.png" width="800" alt="Ana Sayfa Boş">
-<i>2. Ana Sayfa (Yazısız): Projenin ilk açılış hali.</i>
+<i>Ana Sayfa (Yazısız): Projenin ilk açılış hali.</i>
 </p>
 <p align="center">
 <img src="ekran_goruntuleri/3.png" width="800" alt="Ana Sayfa Dolu">
-<i>3. Ana Sayfa (İçerik Eklenmiş): Dinamik içerik görünümü.</i>
+<i>Ana Sayfa (İçerik Eklenmiş): Dinamik içerik görünümü.</i>
 </p>
 <p align="center">
 <img src="ekran_goruntuleri/4.png" width="800" alt="Admin Paneli">
-<i>4. Admin Yönetim Paneli: Yazı ekleme, silme ve listeleme merkezi.</i>
+<i>Admin Yönetim Paneli: Yazı ekleme, silme ve listeleme merkezi.</i>
 </p>
 <p align="center">
 <img src="ekran_goruntuleri/5.png" width="800" alt="Düzenleme Ekranı">
 
-<i>5. Düzenleme ve Önizleme: Sayfa yenilemeden çalışan Modal arayüzü.</i>
+<i>Düzenleme ve Önizleme: Sayfa yenilemeden çalışan Modal arayüzü.</i>
 </p>
 
 Geliştirici: Can Sarıhan

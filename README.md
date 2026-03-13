@@ -11,41 +11,46 @@ Bu proje, **Siber Vatan Programı** ön eleme aşaması için geliştirilmiş, N
 
 ## 🚀 Kurulum ve Çalıştırma
 1. Bağımlılıkları yüklemek için:
+```bash
    npm install
 
-2. Uygulamayı başlatmak için:
+2. Uygulamayı başlatmak için::
+   ```bash
    node server.js
 
-3. Tarayıcıdan erişmek için: 
-
+3. Tarayıcıdan erişmek için:
+    ```bash
 http://localhost:3000
 
 Admin Giriş Bilgileri:
+```bash
 URL: /login
 Kullanıcı Adı: admin
 Şifre: 1234
 
-## 📸 Proje Akışı ve Ekran Görüntüleri
+📸 Proje Akışı ve Ekran Görüntüleri
+<p align="center">
+<img src="ekran_goruntuleri/1.png" width="800" alt="Yönetici Giriş Ekranı">
 
-#### 1. Yönetici Giriş Ekranı
-Siber Vatan kurumsal renklerine uygun, güvenli giriş arayüzü.
-![Giriş Ekranı](./1.png)
 
-#### 2. Ana Sayfa (Yazısız)
-Projenin ilk açılış hali ve temiz arayüz tasarımı.
-![Boş Ana Sayfa](./2.png)
-
-#### 3. Ana Sayfa (İçerik Eklenmiş)
-Dinamik olarak eklenen yazıların kullanıcı tarafındaki görünümü.
-![İçerikli Ana Sayfa](./3.png)
-
-#### 4. Admin Yönetim Paneli
-Yazı ekleme, silme ve listeleme işlemlerinin yapıldığı kontrol merkezi.
-![Admin Panel](./4.png)
-
-#### 5. Düzenleme ve Önizleme (Inline Popup)
-Sayfa yenilemeden çalışan modern düzenleme (Modal) arayüzü.
-![Düzenleme Popup](./5.png)
+<i>1. Yönetici Giriş Ekranı: Siber Vatan kurumsal renklerine uygun arayüz.</i>
+</p>
+<p align="center">
+<img src="ekran_goruntuleri/2.png" width="800" alt="Ana Sayfa Boş">
+<i>2. Ana Sayfa (Yazısız): Projenin ilk açılış hali.</i>
+</p>
+<p align="center">
+<img src="ekran_goruntuleri/3.png" width="800" alt="Ana Sayfa Dolu">
+<i>3. Ana Sayfa (İçerik Eklenmiş): Dinamik içerik görünümü.</i>
+</p>
+<p align="center">
+<img src="ekran_goruntuleri/4.png" width="800" alt="Admin Paneli">
+<i>4. Admin Yönetim Paneli: Yazı ekleme, silme ve listeleme merkezi.</i>
+</p>
+<p align="center">
+<img src="ekran_goruntuleri/5.png" width="800" alt="Düzenleme Ekranı">
+<i>5. Düzenleme ve Önizleme: Sayfa yenilemeden çalışan Modal arayüzü.</i>
+</p>
 
 Geliştirici: Can Sarıhan
 
